@@ -2,8 +2,6 @@ const canvas = document.getElementById('memeCanvas');
 const ctx = canvas.getContext('2d');
 
 // Load the fixed base images
-const baseImage1 = new Image();
-baseImage1.src = 'assets/bg.png'; // Path to the first base image
 
 const baseImage2 = new Image();
 baseImage2.src = 'assets/head.png'; // Path to the second base image
@@ -16,6 +14,7 @@ let selectedHat = null;
 let selectedBackground = null;
 let selectedClothing = null;
 let selectedWing = null;
+let selectedBg = null;
 
 // Ensure the base images and selected assets are drawn in the correct order
 function drawMeme() {
@@ -25,7 +24,7 @@ function drawMeme() {
     // Background at the back
 
     // Draw base images
-    ctx.drawImage(baseImage1, 0, 0, canvas.width, canvas.height); // Base Image 1
+    if (selectedBg) ctx.drawImage(selectedBg, 0, 0, canvas.width, canvas.height); // bg
     if (selectedHat) ctx.drawImage(selectedHat, 0, 0, canvas.width, canvas.height); // Hat on top of base images
     ctx.drawImage(baseImage3, 0, 0, canvas.width, canvas.height); // Base Image 3
 
@@ -55,6 +54,9 @@ function setAsset(type, assetPath) {
             case 'wing':
                 selectedWing = image;
                 break;
+            case 'bg':
+                selectedBg = image;
+                break;    
         }
         drawMeme(); // Redraw the canvas every time an asset is set
     }
@@ -75,6 +77,9 @@ function clearAsset(type) {
         case 'wing':
             selectedWing = null;
             break;
+        case 'bg':
+            selectedBg = null;
+            break;    
     }
     drawMeme(); // Redraw without the cleared asset
 }
@@ -85,11 +90,11 @@ function clearAll() {
     selectedBackground = null;
     selectedClothing = null;
     selectedWing = null;
+    selectedBg = null;
     drawMeme();
 }
 
 // Ensure the base images are drawn when they load
-baseImage1.onload = drawMeme;
 baseImage2.onload = drawMeme;
 baseImage3.onload = drawMeme;
 
@@ -100,4 +105,3 @@ function downloadMeme() {
     link.href = canvas.toDataURL();
     link.click();
 }
-
