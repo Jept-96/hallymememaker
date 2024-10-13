@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HALLY</title>
+    <title>HALLEY</title>
     <link rel="stylesheet" href="style.css">
-    <title>Hally's MeMemaker</title>
-    <head>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
-    </head>
+    <title>Halley's MeMemaker</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+      <style>
+      body {
+        font-family: "Honk", sans-serif;
+      }
+      </style>
+      
+
+
   <style>
 
     body {
@@ -27,26 +34,29 @@
 
     nav {
       background-color: #00000000;
-      padding: 15px;
+      padding: 20px;
       text-align: center;
-      max-width: 200px;
+      max-width: 300px;
       margin: auto;
       margin-top: 20px ;
-      font-size: 20px;
+      font-size: 30px;
+      font-family: 'Honk', sans-serif;
     }
 
     a {
       color: #ffffff;
       text-decoration: none;
       padding: 10px;
+      background-color: #000000;
+      border-radius: 30px;
     }
 
     a:hover {
-      background-color: #33e5f1;
+      background-color: #f710d8a6;
     }
 
     main {
-      padding: 10px;
+      padding: 20px;
     }
 
     /* width */
@@ -71,42 +81,88 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #5fe7ffbb; 
+  background: #f710d8a6; 
 }
   </style>
 </head>
 <body>
-
+  
+  <style>
+    body {
+      background-color: black;
+      font-family: "Honk", sans-serif;
+    }
+    
+    .glow {
+      font-size: 80px;
+      color: #fff;
+      text-align: center;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #000000, 0 0 30px #0cffa2, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      }
+      
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h1 class="glow">Halley Meme-Maker</h1>
+         
+    </body>
+  
+    
 
   <nav>
-    <a href="#">Home</a>
+    <a href="https://halley.lol/">Home</a>
   </nav>
 
 </head>
-
 <body>
     <canvas id="memeCanvas" width="500" height="500"></canvas>
-    <h1>Body</h1>
-    <div id="control"
-    <div class="slider" id="backgroundSlider">
-      <img src="assets/body1.png" alt="Background 1" onclick="setAsset('background', 'assets/body1.png')" />
-      <img src="assets/body2.png" alt="Background 2" onclick="setAsset('background', 'assets/body2.png')" />
-      <img src="assets/body3.png" alt="Background 2" onclick="setAsset('background', 'assets/body3.png')" />
-      <img src="assets/body4.png" alt="Background 4" onclick="setAsset('background', 'assets/body4.png')" />
-      <img src="assets/body5.png" alt="Background 5" onclick="setAsset('background', 'assets/body5.png')" />
-      <img src="assets/body6.png" alt="Background 6" onclick="setAsset('background', 'assets/body6.png')" />
-      <img src="assets/body7.png" alt="Background 7" onclick="setAsset('background', 'assets/body7.png')" />
-      <img src="assets/body8.png" alt="Background 8" onclick="setAsset('background', 'assets/body8.png')" />
-      <img src="assets/body9.png" alt="Background 9" onclick="setAsset('background', 'assets/body9.png')" />
-      <img src="assets/body10.png" alt="Background 10" onclick="setAsset('background', 'assets/body10.png')" />
-      <img src="assets/body11.png" alt="Background 11" onclick="setAsset('background', 'assets/body11.png')" />
-      <img src="assets/body12.png" alt="Background 12" onclick="setAsset('background', 'assets/body12.png')" />
-      <img src="assets/body13.png" alt="Background 13" onclick="setAsset('background', 'assets/body13.png')" />
-      <img src="assets/body14.png" alt="Background 14" onclick="setAsset('background', 'assets/body14.png')" />
-      </div>
-    </div>
+      <div class="silderbackground">
+        <h2>Background</h2>
+        <div class="slider" id="BgSlider">
+          <img src="assets/bg1.png" alt="bg 1" onclick="setAsset('bg', 'assets/bg1.png')" />
+          <img src="assets/bg2.png" alt="bg 1" onclick="setAsset('bg', 'assets/bg2.png')" />
+          <img src="assets/bg3.png" alt="bg 1" onclick="setAsset('bg', 'assets/bg3.png')" />
+          <img src="assets/bg4.png" alt="bg 1" onclick="setAsset('bg', 'assets/bg4.png')" />
+          <img src="assets/bg5.png" alt="bg 1" onclick="setAsset('bg', 'assets/bg5.png')" />
+          <img src="assets/bg6.png" alt="bg 1" onclick="setAsset('bg', 'assets/bg6.png')" />
+          <img src="assets/bg7.png" alt="bg 1" onclick="setAsset('bg', 'assets/bg7.png')" />
+          <img src="assets/bg8.png" alt="bg 1" onclick="setAsset('bg', 'assets/bg8.png')" />
+          <img src="assets/bg9.png" alt="bg 1" onclick="setAsset('bg', 'assets/bg9.png')" />
+          <img src="assets/bg10.png" alt="bg 1" onclick="setAsset('bg', 'assets/bg10.png')" />
+          <img src="assets/bg11.png" alt="bg 1" onclick="setAsset('bg', 'assets/bg11.png')" />
+        </div>
 
-        <h1>Tail</h1>        <!-- Preview and selection for Backgrounds -->
+        <h2>Body</h2>
+        <div id="control"
+        <div class="slider" id="backgroundSlider">
+        <img src="assets/body1.png" alt="Background 1" onclick="setAsset('background', 'assets/body1.png')" />
+        <img src="assets/body2.png" alt="Background 2" onclick="setAsset('background', 'assets/body2.png')" />
+        <img src="assets/body3.png" alt="Background 2" onclick="setAsset('background', 'assets/body3.png')" />
+        <img src="assets/body4.png" alt="Background 4" onclick="setAsset('background', 'assets/body4.png')" />
+        <img src="assets/body5.png" alt="Background 5" onclick="setAsset('background', 'assets/body5.png')" />
+        <img src="assets/body6.png" alt="Background 6" onclick="setAsset('background', 'assets/body6.png')" />
+        <img src="assets/body7.png" alt="Background 7" onclick="setAsset('background', 'assets/body7.png')" />
+        <img src="assets/body8.png" alt="Background 8" onclick="setAsset('background', 'assets/body8.png')" />
+        <img src="assets/body9.png" alt="Background 9" onclick="setAsset('background', 'assets/body9.png')" />
+        <img src="assets/body10.png" alt="Background 10" onclick="setAsset('background', 'assets/body10.png')" />
+        <img src="assets/body11.png" alt="Background 11" onclick="setAsset('background', 'assets/body11.png')" />
+        <img src="assets/body12.png" alt="Background 12" onclick="setAsset('background', 'assets/body12.png')" />
+        <img src="assets/body13.png" alt="Background 13" onclick="setAsset('background', 'assets/body13.png')" />
+        <img src="assets/body14.png" alt="Background 14" onclick="setAsset('background', 'assets/body14.png')" />
+        </div>
+    
+
+        <h2>Tail</h2>        <!-- Preview and selection for Backgrounds -->
         <div class="slider" id="hatSlider">
             <img src="assets/tail1.png" alt="Hat 1" onclick="setAsset('hat', 'assets/tail1.png')" />
             <img src="assets/tail2.png" alt="Hat 2" onclick="setAsset('hat', 'assets/tail2.png')" />
@@ -122,7 +178,7 @@
         </div>
         
       
-        <h1>Feet</h1><!-- Preview and selection for Clothing -->
+        <h2>Feet</h2><!-- Preview and selection for Clothing -->
         <div class="slider" id="clothingSlider">
             <img src="assets/feet1.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet1.png')" />
             <img src="assets/feet2.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet2.png')" />
@@ -143,7 +199,7 @@
             >
         </div>
 
-        <h1>Face</h1><!-- Preview and selection for Wings -->
+        <h2>Face</h2><!-- Preview and selection for Wings -->
         <div class="slider" id="wing-Slider">
             <img src="assets/face1.png" alt="Wing 1" onclick="setAsset('wing', 'assets/face1.png')" />
             <img src="assets/face2.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face2.png')" />
@@ -174,6 +230,7 @@
             <img src="assets/face27.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face27.png')" />
             <img src="assets/face28.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face28.png')" />
         </div>
+      </div>
 
         <button onclick="clearAll()">Reset</button>
         <button onclick="downloadMeme()">Download Meme</button>
