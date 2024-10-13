@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALLY</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Hally's MeMemaker</title>
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    </head>
+  <style>
+
+    body {
+      margin: auto;
+      padding: 0;
+      max-width: 50rem;
+    }
+
+    header {
+      background-color: #000000;
+      padding: 50px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #00000000;
+      padding: 15px;
+      text-align: center;
+      max-width: 200px;
+      margin: auto;
+      margin-top: 20px ;
+      font-size: 20px;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    a:hover {
+      background-color: #33e5f1;
+    }
+
+    main {
+      padding: 10px;
+    }
+
+    /* width */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 12px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px rgb(0, 0, 0); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.226); 
+  border-radius: 10px;
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5fe7ffbb; 
+}
+  </style>
+</head>
+<body>
+
+
+  <nav>
+    <a href="#">Home</a>
+  </nav>
+
+</head>
+
+<body>
+    <canvas id="memeCanvas" width="500" height="500"></canvas>
+    <h1>Body</h1>
+    <div id="control"
+    <div class="slider" id="backgroundSlider">
+      <img src="assets/body1.png" alt="Background 1" onclick="setAsset('background', 'assets/body1.png')" />
+      <img src="assets/body2.png" alt="Background 2" onclick="setAsset('background', 'assets/body2.png')" />
+      <img src="assets/body3.png" alt="Background 2" onclick="setAsset('background', 'assets/body3.png')" />
+      <img src="assets/body4.png" alt="Background 4" onclick="setAsset('background', 'assets/body4.png')" />
+      <img src="assets/body5.png" alt="Background 5" onclick="setAsset('background', 'assets/body5.png')" />
+      <img src="assets/body6.png" alt="Background 6" onclick="setAsset('background', 'assets/body6.png')" />
+      <img src="assets/body7.png" alt="Background 7" onclick="setAsset('background', 'assets/body7.png')" />
+      <img src="assets/body8.png" alt="Background 8" onclick="setAsset('background', 'assets/body8.png')" />
+      <img src="assets/body9.png" alt="Background 9" onclick="setAsset('background', 'assets/body9.png')" />
+      <img src="assets/body10.png" alt="Background 10" onclick="setAsset('background', 'assets/body10.png')" />
+      <img src="assets/body11.png" alt="Background 11" onclick="setAsset('background', 'assets/body11.png')" />
+      <img src="assets/body12.png" alt="Background 12" onclick="setAsset('background', 'assets/body12.png')" />
+      <img src="assets/body13.png" alt="Background 13" onclick="setAsset('background', 'assets/body13.png')" />
+      <img src="assets/body14.png" alt="Background 14" onclick="setAsset('background', 'assets/body14.png')" />
+      </div>
+    </div>
+
+        <h1>Tail</h1>        <!-- Preview and selection for Backgrounds -->
+        <div class="slider" id="hatSlider">
+            <img src="assets/tail1.png" alt="Hat 1" onclick="setAsset('hat', 'assets/tail1.png')" />
+            <img src="assets/tail2.png" alt="Hat 2" onclick="setAsset('hat', 'assets/tail2.png')" />
+            <img src="assets/tail3.png" alt="Hat 3" onclick="setAsset('hat', 'assets/tail3.png')" />
+            <img src="assets/tail4.png" alt="Hat 4" onclick="setAsset('hat', 'assets/tail4.png')" />
+            <img src="assets/tail5.png" alt="Hat 5" onclick="setAsset('hat', 'assets/tail5.png')" />
+            <img src="assets/tail6.png" alt="Hat 6" onclick="setAsset('hat', 'assets/tail6.png')" />
+            <img src="assets/tail7.png" alt="Hat 7" onclick="setAsset('hat', 'assets/tail7.png')" />
+            <img src="assets/tail8.png" alt="Hat 8" onclick="setAsset('hat', 'assets/tail8.png')" />
+            <img src="assets/tail9.png" alt="Hat 9" onclick="setAsset('hat', 'assets/tail9.png')" />
+            <img src="assets/tail10.png" alt="Hat 10" onclick="setAsset('hat', 'assets/tail10.png')" />
+            <img src="assets/tail11.png" alt="Hat 11" onclick="setAsset('hat', 'assets/tail11.png')" />
+        </div>
+        
+      
+        <h1>Feet</h1><!-- Preview and selection for Clothing -->
+        <div class="slider" id="clothingSlider">
+            <img src="assets/feet1.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet1.png')" />
+            <img src="assets/feet2.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet2.png')" />
+            <img src="assets/feet3.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet3.png')" />
+            <img src="assets/feet4.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet4.png')" />
+            <img src="assets/feet5.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet5.png')" />
+            <img src="assets/feet6.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet6.png')" />
+            <img src="assets/feet7.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet7.png')" />
+            <img src="assets/feet8.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet8.png')" />
+            <img src="assets/feet9.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet9.png')" />
+            <img src="assets/feet10.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet10.png')" />
+            <img src="assets/feet11.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet11.png')" />
+            <img src="assets/feet12.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet12.png')" />
+            <img src="assets/feet13.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet13.png')" />
+            <img src="assets/feet14.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet14.png')" />
+            <img src="assets/feet15.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet15.png')" />
+            <img src="assets/feet16.png" alt="Clothing 1" onclick="setAsset('clothing', 'assets/feet16.png')" />
+            >
+        </div>
+
+        <h1>Face</h1><!-- Preview and selection for Wings -->
+        <div class="slider" id="wing-Slider">
+            <img src="assets/face1.png" alt="Wing 1" onclick="setAsset('wing', 'assets/face1.png')" />
+            <img src="assets/face2.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face2.png')" />
+            <img src="assets/face3.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face3.png')" />
+            <img src="assets/face4.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face4.png')" />
+            <img src="assets/face5.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face5.png')" />
+            <img src="assets/face6.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face6.png')" />
+            <img src="assets/face7.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face7.png')" />
+            <img src="assets/face8.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face8.png')" />
+            <img src="assets/face9.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face9.png')" />
+            <img src="assets/face10.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face10.png')" />
+            <img src="assets/face11.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face11.png')" />
+            <img src="assets/face12.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face12.png')" />
+            <img src="assets/face13.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face13.png')" />
+            <img src="assets/face14.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face14.png')" />
+            <img src="assets/face15.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face15.png')" />
+            <img src="assets/face16.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face16.png')" />
+            <img src="assets/face17.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face17.png')" />
+            <img src="assets/face18.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face18.png')" />
+            <img src="assets/face19.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face19.png')" />
+            <img src="assets/face20.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face20.png')" />
+            <img src="assets/face21.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face21.png')" />
+            <img src="assets/face22.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face22.png')" />
+            <img src="assets/face23.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face23.png')" />
+            <img src="assets/face24.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face24.png')" />
+            <img src="assets/face25.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face25.png')" />
+            <img src="assets/face26.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face26.png')" />
+            <img src="assets/face27.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face27.png')" />
+            <img src="assets/face28.png" alt="Wing 2" onclick="setAsset('wing', 'assets/face28.png')" />
+        </div>
+
+        <button onclick="clearAll()">Reset</button>
+        <button onclick="downloadMeme()">Download Meme</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
